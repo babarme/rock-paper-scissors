@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:"barlow condensed",sans-serif;
+}
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.scorecard{
+    width: 700px;
+    border: 2px solid white;
+    height: 150px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 5px 10px black;
+    border-style: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+
+    margin-left: 30px;
+}
+.score{
+    width: 150px;
+    height: 100px;
+    background-color: white;
+    border-radius: inherit;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 24px;
+    margin-right: 20px;
+ 
+    border-style: solid;
+}
+.score p{
+    color: rgb(4, 18, 59);
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+.hands {
+    background-image: url("assets/triangle.png");
+    background-repeat: no-repeat;
+    background-position: center ;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 476px;
+    height: 430px;
+    margin-top: 25px;
+
+}
+.scissors{
+    margin-left: 20px;
+}
+.hands .hand{
+    cursor: pointer;
+    transition: all 0.3s;
+
+}
+.hands .hand:hover{
+    transform: translate3d(0px, -8px, 0px);
+}
+
+.contest{
+    width: 900px;
+    display: none;
+    margin-top: 50px;
+}
+.contest img{
+width: 275px;
+height: 275px;
+}
+.contest > div{
+    flex: 1;
+}
+
+ .contest h1{
+color: white;
+font-size: 24px;
+margin-top: 20px;
+margin-bottom: 20px;
+text-align: center;
+ }   
+ .contest .handleimagecont{
+     display: flex;
+     justify-content: center;
+  }
+  .referee{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+  }
+  .decision h1{
+      font-size: 36px;
+  }
+.newgame{
+      background-color: white;
+      padding: 12px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow:5px 10px black;
+      color:rgb(4, 18, 59);
+      font-weight: bold;
+      transition: all 0.15s;
+  }
+  .newgame:hover{
+      background-color: bisque;
+      transform: translate3d(0px, -2px, 0px);
+  }
